@@ -1,0 +1,83 @@
+.registration-form {
+  &__element {
+    color: getColor('secondary');
+    margin-bottom: 10px;
+  }
+
+  &__element:last-child {
+    margin-bottom: 20px;
+  }
+
+  &__wrap {
+    position: relative;
+  }
+
+  &__label {
+    margin-bottom: 4px;
+
+    @include font-style(null, 12px, 0.01em, 1.17);
+    color: getColor('tertiary');
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    height: 40px;
+
+    padding: 10px 12px 10px 42px;
+    font: inherit;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    font-size: 14px;
+    color: inherit;
+
+    transition: border 250ms $timing-function;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+
+    fill: currentColor;
+    transition: color 250ms $timing-function;
+  }
+
+  &__input:focus {
+    outline: transparent;
+    border: 1px solid getColor('accent');
+  }
+
+  &__input:focus ~ &__icon {
+    color: getColor('accent');
+  }
+
+  &__comment {
+    padding: 12px 16px;
+    width: 100%;
+    height: 120px;
+
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    font: inherit;
+    font-size: 14px;
+
+    transition: outline 250ms $timing-function, border-color 250ms $timing-function;
+  }
+
+  &__comment::placeholder {
+    @include font-style(null, 12px, 0.01em, 1.17);
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &__comment:focus {
+    outline: transparent;
+    border-color: getColor('accent');
+  }
+
+  &__license-form {
+    margin-bottom: 30px;
+  }
+}

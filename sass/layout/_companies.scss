@@ -1,0 +1,44 @@
+.companies {
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    height: 92px;
+    width: 170px;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: $gap-size;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    outline: transparent;
+    border: 1px solid getColor('icon');
+    border-radius: 4px;
+    color: getColor('icon');
+
+    transition: color 250ms $timing-function, border 250ms $timing-function;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: getColor('accent');
+    border: 1px solid getColor('accent');
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}

@@ -1,0 +1,22 @@
+.member-card {
+  flex-basis: calc((100% - 3 * #{$gap-size} / 4));
+
+  &__meta {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    background-color: getColor('primary');
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  &__name {
+    margin-bottom: 10px;
+
+    @include font-style(500, 16px, null, null);
+    color: getColor('secondary');
+  }
+
+  &__text {
+    margin-bottom: 16px;
+  }
+}

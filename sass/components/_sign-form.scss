@@ -1,0 +1,29 @@
+.sign-form {
+  display: flex;
+  align-items: center;
+
+  &__email {
+    margin-right: 12px;
+    padding: 15px 16px;
+    width: 358px;
+    height: 50px;
+    background: transparent;
+    border: 1px solid rgba(getColor('primary'), 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(getColor('dark'), 0.15));
+    border-radius: 4px;
+    color: rgba(getColor('primary'), 0.6);
+
+    transition: border-color 250ms $timing-function;
+  }
+
+  &__email::placeholder {
+    @include font-style(null, null, 0.03em, 1.25);
+
+    color: rgba(getColor('primary'), 0.6);
+  }
+
+  &__email:focus {
+    outline: transparent;
+    border-color: getColor('accent');
+  }
+}

@@ -1,8 +1,16 @@
 .page-header {
-  border-bottom: 1px solid var(--header-border-color);
-}
+  border-bottom: 1px solid getColor('header-border');
 
-.page-header__container {
-  display: flex;
-  align-items: center;
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 93px;
+  }
+
+  &__contacts {
+    margin-left: auto;
+  }
 }

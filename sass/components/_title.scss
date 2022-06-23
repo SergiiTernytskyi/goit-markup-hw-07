@@ -1,0 +1,5 @@
+.title {
+  @include font-style(700, 36px, 0.03em, 1.17);
+  text-align: center;
+  color: getColor('secondary');
+}

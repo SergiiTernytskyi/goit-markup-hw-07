@@ -1,0 +1,16 @@
+.advantages {
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: flex;
+  }
+  &__items {
+    max-width: calc((100% - 3 * #{$gap-size} / 4));
+  }
+
+  &__items:not(:last-child) {
+    margin-right: $gap-size;
+  }
+}

@@ -1,0 +1,26 @@
+.adress {
+  &__item {
+    @include font-style(null, 14px, 0.03em, 1.71);
+    color: getColor('primary');
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &__link {
+    color: inherit;
+    font-style: normal;
+
+    transition: color 250ms $timing-function;
+  }
+
+  .adress__link:hover,
+  .adress__link:focus {
+    color: getColor('accent');
+  }
+
+  .adress__link--colored {
+    color: rgba(getColor('primary'), 0.6);
+  }
+}

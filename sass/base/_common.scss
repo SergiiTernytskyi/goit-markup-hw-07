@@ -1,5 +1,24 @@
 body {
-  color: var(--first-text-color);
-  background-color: var(--first-bg-color);
-  font-family: 'Roboto', sans-serif;
+  color: getColor('tertiary');
+  background-color: getColor('primary');
+  font-family: $primary-font;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+//Reset of list style
+.list {
+  padding-left: 0;
+  padding-right: 0;
+
+  list-style: none;
+}
+
+// Reset of text underline
+.link {
+  text-decoration: none;
 }

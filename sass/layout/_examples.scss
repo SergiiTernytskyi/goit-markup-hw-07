@@ -1,0 +1,9 @@
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    flex-basis: calc((100% - (3 * #{$gap-size})) / 3);
+    margin: calc(#{$gap-size} / 2);
+  }
+}

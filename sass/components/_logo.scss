@@ -1,0 +1,13 @@
+.logo {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  font-family: $secondary-font;
+  @include font-style(700, 26px, 0.03em, 1.19);
+  color: getColor('secondary');
+
+  &__text--accent {
+    color: getColor('accent');
+  }
+}
