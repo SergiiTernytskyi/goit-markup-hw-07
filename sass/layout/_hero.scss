@@ -1,7 +1,7 @@
 .hero {
   text-align: center;
 
-  .hero__image {
+  &__image {
     margin-right: auto;
     margin-left: auto;
     padding-top: 200px;
@@ -16,7 +16,7 @@
     background-position: center;
   }
 
-  .hero__title {
+  &__title {
     margin: 0 auto 30px auto;
     max-width: 696px;
 

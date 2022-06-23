@@ -3,6 +3,7 @@
 @import './base/variables';
 @import './base/reset';
 @import './base/common';
+@import './base/grid';
 @import './utils/mixins';
 
 @import './utils/visually-hidden';
@@ -23,7 +24,6 @@
 @import './components/registration-form';
 @import './components/licese';
 @import './components/button-row';
-@import './components/grid';
 @import './components/product-card';
 
 @import './layout/container';

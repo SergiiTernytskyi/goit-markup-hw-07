@@ -15,12 +15,12 @@
     transition: color 250ms $timing-function;
   }
 
-  .adress__link:hover,
-  .adress__link:focus {
+  &__link:hover,
+  &__link:focus {
     color: getColor('accent');
   }
 
-  .adress__link--colored {
+  &__link--colored {
     color: rgba(getColor('primary'), 0.6);
   }
 }
