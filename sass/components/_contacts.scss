@@ -14,7 +14,7 @@
 
     color: inherit;
 
-    transition: color 250ms $timing-function;
+    @include transition-function(color);
   }
 
   &__link:hover,

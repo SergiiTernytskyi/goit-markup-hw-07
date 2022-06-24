@@ -31,7 +31,7 @@
     font-size: 14px;
     color: inherit;
 
-    transition: border 250ms $timing-function;
+    @include transition-function(border);
   }
 
   &__icon {
@@ -41,15 +41,18 @@
     transform: translateY(-50%);
 
     fill: currentColor;
-    transition: color 250ms $timing-function;
+
+    @include transition-function(color);
   }
 
-  &__input:focus {
+  &__input:focus,
+  &__input:hover {
     outline: transparent;
     border: 1px solid getColor('accent');
   }
 
-  &__input:focus ~ &__icon {
+  &__input:focus,
+  &__input:hover ~ &__icon {
     color: getColor('accent');
   }
 
@@ -64,7 +67,7 @@
     font: inherit;
     font-size: 14px;
 
-    transition: outline 250ms $timing-function, border-color 250ms $timing-function;
+    @include transition-function(transition, border-color);
   }
 
   &__comment::placeholder {
@@ -72,7 +75,8 @@
     color: rgba(117, 117, 117, 0.5);
   }
 
-  &__comment:focus {
+  &__comment:focus,
+  &__comment:hover {
     outline: transparent;
     border-color: getColor('accent');
   }

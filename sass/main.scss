@@ -1,39 +1,7 @@
-@import './base/typography';
-@import './base/colors';
-@import './base/variables';
-@import './base/reset';
-@import './base/common';
-@import './base/grid';
-@import './utils/mixins';
+@import './utils/utils';
 
-@import './utils/visually-hidden';
+@import './base/base';
 
-@import './components/logo';
-@import './components/page-nav';
-@import './components/contacts';
-@import './components/button';
-@import './components/title';
-@import './components/advantage-card';
-@import './components/member-card';
-@import './components/socials';
-@import './components/adress';
-@import './components/sign-form';
-@import './components/backdrop';
-@import './components/modal-window';
-@import './components/close-button';
-@import './components/registration-form';
-@import './components/licese';
-@import './components/button-row';
-@import './components/product-card';
+@import './components/components';
 
-@import './layout/container';
-@import './layout/section';
-@import './layout/page-header';
-@import './layout/hero';
-@import './layout/advantages';
-@import './layout/about';
-@import './layout/team';
-@import './layout/companies';
-@import './layout/footer';
-@import './layout/works';
-@import './layout/examples';
+@import './layout/layout';

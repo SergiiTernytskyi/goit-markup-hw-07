@@ -13,7 +13,7 @@
     border-radius: 4px;
     color: rgba(getColor('primary'), 0.6);
 
-    transition: border-color 250ms $timing-function;
+    @include transition-function(transition);
   }
 
   &__email::placeholder {
@@ -22,7 +22,8 @@
     color: rgba(getColor('primary'), 0.6);
   }
 
-  &__email:focus {
+  &__email:focus,
+  &__email:hover {
     outline: transparent;
     border-color: getColor('accent');
   }

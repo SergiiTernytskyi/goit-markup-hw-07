@@ -22,7 +22,7 @@
     background-color: transparent;
     border-radius: 50%;
 
-    transition: color 250ms $timing-function, background-color 250ms $timing-function;
+    @include transition-function(color, background-color);
   }
 
   &__link:hover,

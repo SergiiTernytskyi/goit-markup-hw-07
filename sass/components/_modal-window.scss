@@ -13,7 +13,7 @@
   transition: transform 250ms $timing-function, opacity 250ms $timing-function;
 
   &__title {
-    margin-bottom: 30px;
+    margin-bottom: 12px;
 
     @include font-style(700, 20px, 0.03em, 1.15);
     text-align: center;

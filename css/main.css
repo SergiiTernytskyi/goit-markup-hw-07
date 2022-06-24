@@ -1,3 +1,17 @@
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
 h1,
 h2,
 h3,
@@ -34,20 +48,6 @@ img {
 
 .grid {
   margin: calc(30px / -2);
-}
-
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
-  margin: -1px;
 }
 
 .logo {
@@ -345,8 +345,10 @@ img {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.6);
-  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-transition 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transition 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transition 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transition 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transition 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .sign-form__email::-webkit-input-placeholder {
   letter-spacing: 0.03em;
@@ -373,7 +375,7 @@ img {
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
-.sign-form__email:focus {
+.sign-form__email:focus, .sign-form__email:hover {
   outline: transparent;
   border-color: #2196f3;
 }
@@ -418,7 +420,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-window__title {
-  margin-bottom: 30px;
+  margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 0.03em;
@@ -506,11 +508,11 @@ img {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.registration-form__input:focus {
+.registration-form__input:focus, .registration-form__input:hover {
   outline: transparent;
   border: 1px solid #2196f3;
 }
-.registration-form__input:focus ~ .registration-form__icon {
+.registration-form__input:focus, .registration-form__input:hover ~ .registration-form__icon {
   color: #2196f3;
 }
 .registration-form__comment {
@@ -522,8 +524,10 @@ img {
   border-radius: 4px;
   font: inherit;
   font-size: 14px;
-  -webkit-transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transition 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transition 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transition 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transition 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transition 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .registration-form__comment::-webkit-input-placeholder {
   font-size: 12px;
@@ -555,7 +559,7 @@ img {
   line-height: 1.17;
   color: rgba(117, 117, 117, 0.5);
 }
-.registration-form__comment:focus {
+.registration-form__comment:focus, .registration-form__comment:hover {
   outline: transparent;
   border-color: #2196f3;
 }
@@ -595,8 +599,10 @@ img {
   border: 2px solid #212121;
   border-radius: 2px;
   background-color: #ffffff;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transition 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transition 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transition 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transition 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transition 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .license-form__icon {
   visibility: hidden;
